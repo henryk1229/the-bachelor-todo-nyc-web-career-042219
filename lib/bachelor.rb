@@ -1,9 +1,15 @@
 def get_first_name_of_season_winner(data, season)
   # code here
   winner = ""
+<<<<<<< HEAD
   data[season].each do |contestants_hash|
     if contestants_hash["status"] == "Winner"
       winner = contestants_hash["name"]
+=======
+  data[season].each do |contestants|
+    if contestants["status"] == "Winner"
+      winner = contestants["name"]
+>>>>>>> 656ba1f7a948dce3dfb33cf50157e3c3cd4c1d6d
     end
   end
   winner.split.first 
